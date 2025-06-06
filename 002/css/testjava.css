@@ -1,0 +1,26 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f8ff;
+  text-align: center;
+  padding-top: 100px;
+  margin: 0;
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 3em;
+}
+
+p {
+  color: #555;
+  font-size: 1.5em;
+}
+
+.welcome-box {
+  background-color: #ffffff;
+  padding: 40px;
+  margin: 0 auto;
+  width: 60%;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}

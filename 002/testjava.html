@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>หน้าเว็บต้อนรับ</title>
+  <!-- เชื่อมต่อกับไฟล์ CSS ภายนอก -->
+  <link rel="stylesheet" href="css/testjava.css" />
+</head>
+<body>
+
+  <div class="welcome-box">
+    <h1>ยินดีต้อนรับ!</h1>
+    <p id="welcomeMessage"></p>
+  </div>
+
+  <script>
+    // JavaScript แสดงข้อความต้อนรับ
+    const name = prompt("กรุณากรอกชื่อของคุณ:");
+    const welcomeText = name ? `สวัสดีคุณ ${name} ยินดีต้อนรับสู่เว็บไซต์ของเรา!` : "ยินดีต้อนรับผู้เยี่ยมชม!";
+    document.getElementById("welcomeMessage").textContent = welcomeText;
+  </script>
+
+</body>
+</html>
