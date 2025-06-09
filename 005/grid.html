@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ระบบปฏิบัติการ</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    /* Header */
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Grid Section */
+    .content {
+      padding: 30px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .grid-item {
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .grid-item h3 {
+      margin-top: 0;
+      color: #007acc;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>ระบบปฏิบัติการ</h1>
+    <nav>
+      <a href="#">หน้าแรก</a>
+      <a href="#">เกี่ยวกับ</a>
+      <a href="#">ติดต่อ</a>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <section class="content">
+    <h2>ตัวอย่างระบบปฏิบัติการยอดนิยม</h2>
+    <div class="grid-container">
+      <div class="grid-item">
+        <h3>Windows</h3>
+        <p>ระบบปฏิบัติการยอดนิยมจาก Microsoft ใช้กันอย่างแพร่หลายในองค์กรและผู้ใช้ทั่วไป</p>
+      </div>
+      <div class="grid-item">
+        <h3>macOS</h3>
+        <p>ระบบปฏิบัติการของ Apple ที่ใช้กับเครื่อง Mac มีความเสถียรและใช้งานง่าย</p>
+      </div>
+      <div class="grid-item">
+        <h3>Linux</h3>
+        <p>ระบบปฏิบัติการแบบโอเพนซอร์ส มีหลายดิสโทร เช่น Ubuntu, Debian, Fedora</p>
+      </div>
+      <div class="grid-item">
+        <h3>Android</h3>
+        <p>ระบบปฏิบัติการบนมือถือที่ใช้ Linux Kernel พัฒนาโดย Google</p>
+      </div>
+      <div class="grid-item">
+        <h3>iOS</h3>
+        <p>ระบบปฏิบัติการมือถือของ Apple ใช้กับ iPhone และ iPad</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 เว็บไซต์แนะนำระบบปฏิบัติการ
+  </footer>
+
+</body>
+</html>
