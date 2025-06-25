@@ -43,6 +43,33 @@
 </div>
     </nav>
 </header>
+<h2 class="w3-center">Automatic Slideshow</h2>
+
+<div class="w3-content w3-section" style="max-width:500px; margin:auto; text-align:center;">
+  <img class="mySlides" src="https://img.wongnai.com/p/800x0/2021/12/13/464583a8ce4c4499a6daa661eb9b998f.jpg" style="width:100%">
+  <img class="mySlides" src="https://img.wongnai.com/p/800x0/2021/12/13/fd241897c3654a28a1cd8bfec90520d0.jpg" style="width:100%">
+  <img class="mySlides" src="https://img.wongnai.com/p/800x0/2021/12/13/3c8c143b82cf449e8f90a3b4c215ed0b.jpg" style="width:100%">
+  <img class="mySlides" src="https://img.wongnai.com/p/800x0/2021/12/13/95d08edd66d34d10aa0366f099872c1f.jpg" style="width:100%">
+  <img class="mySlides" src="https://img.wongnai.com/p/800x0/2021/12/13/da07b958151b40cc9305511df1332bcc.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
 <body>
   <h1>🥤รายการเครื่องดื่ม🥤</h1>
  <div class="food-list">
